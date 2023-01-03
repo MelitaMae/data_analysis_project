@@ -1,0 +1,86 @@
+## get working directory
+getwd()
+
+## library tidyverse
+library(tidyverse)
+
+## basic plot (base R)
+
+hist(mtcars$mpg)
+
+## Analyzing horse power
+## Histogram - One Quantitative Variable
+hist(mtcars$hp)
+mean(mtcars$hp)
+median(mtcars$hp)
+
+str(mtcars)
+## เปลี่ยนค่า numeric ใน column am ให้เป็น factor แล้ว assign ค่ากลับไปที่ column เดิม
+mtcars$am <- factor(mtcars$am,
+                    levels = c(0,1),
+                    labels = c("Auto" , "Manual"))
+
+## Bar Plot  - One Quantitative Variable
+barplot(table(mtcars$am))
+
+## Box Plot
+## ใช้ identify ค่า outliner
+boxplot(mtcars$hp)
+fivenum(mtcars$hp)
+
+## fivenum คือค่า min , Q1(ขอบล่าง) , Q2(med) , Q3(ขอบล่าง) , max
+
+min(mtcars$hp)
+quantile(mtcars$hp, probs = c(.25, .5, .75))
+max(mtcars$hp)
+
+## whisker calculation
+Q3 <- quantile(mtcars$hp, probs = .75)
+Q1 <- quantile(mtcars$hp, probs = .25)
+IQR_hp <- Q3 - Q1
+
+Q3 + 1.5*IQR_hp
+Q1 - 1.5*IQR_hp
+
+## จาก mtcars กำหนดไว้ว่า ถ้าhp เกินกว่า 300 จะให้เป็น outlier เลย
+## และ hp ที่ติดลบ มันเป็นไปไม่ได้ ก็ให้กำหนดเป็นค่า min ที่เป็นไปได้ คือ 50 
+## แขนของกราฟ Hist ก็เลยออกมาเป็นแบบนี้
+## ค่า coef 1.5 สามารถเปลี่ยนได้ (1.5 คือ defualt)
+
+boxplot.stats(mtcars$hp, coef = 1.5)
+
+## filter out outlier
+mtcars_no_out <- mtcars %>%
+  filter(hp < 335)
+
+boxplot(mtcars_no_out)
+boxplot(mtcars_no_out$hp)
+
+## Boxplot 2 variables
+## Qualitative x Quantitative
+
+## ถ้า built in data frame เกิด error ให้โหลดตัว original กลับมา โดย
+data(mtcars)
+
+mtcars$am <- factor(mtcars$am,
+                    levels = c(0,1),
+                    labels = c("Auto" , "Manual"))
+
+boxplot(mpg ~ am, data = mtcars)
+
+## ใส่สี
+boxplot(mpg ~ am, data = mtcars,
+        col = c("blue", "orange"))
+
+## Scatter Plot
+## 2 x Quantitative
+plot(mtcars$hp , mtcars$mpg, pch = 17,
+     col = "green",
+     main = "Relationship between HP and MPG",
+     xlab = "Horse Power",
+     ylab = "Miles Per Gallon")
+
+cor(mtcars$hp , mtcars$mpg)
+lm(mpg ~ hp , data  = mtcars)
+
+
