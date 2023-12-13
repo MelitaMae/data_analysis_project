@@ -133,7 +133,6 @@ df_mpg <- df %>%
     TRUE ~ "other" ## ELSE
   ))
 
-## BREAK 10 minute: 10:40am
 
 ## filter NA (missing values)
 
