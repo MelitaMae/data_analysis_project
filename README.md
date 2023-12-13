@@ -53,6 +53,6 @@ Hello, I'm an engineer with a passion for data analytics. I specialize in managi
   * PowerBI
     
 
-[Badge](https://www.credly.com/users/melita-sawangchot)
+[Badges](https://www.credly.com/users/melita-sawangchot)
 
 
