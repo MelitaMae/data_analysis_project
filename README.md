@@ -17,8 +17,8 @@ Hello, I'm an engineer with a passion for data analytics. I specialize in managi
 
 **1. Spreadsheet**
   * Arrange Data
-  * VLOOKUP
-  * Pivot Table
+  * VLOOKUP [VLOOKUP Workbook](https://docs.google.com/spreadsheets/d/1kTgpjzco6f9KBhzmBlFQ2ej8aTs5U-Q9iGXWBH4Z2Q8/edit?usp=sharing)
+  * Pivot Table [Pivot Table Workbook](https://docs.google.com/spreadsheets/d/1Gs4pGtcPzBLyh9GkepF6RJZaRXcbdyI5S1E0Jd4qrac/edit?usp=sharing)
         
 **2. SQL**
   * Aggregate Function
