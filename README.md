@@ -6,16 +6,35 @@ My Project during the data analysis course.
 
 # Melita's Project
 
-1. Spreadsheets [https://docs.google.com/spreadsheets/d/1yxWgl4ZC8BDubbFPKe-Acrd2f6UJVCMKuH6nlD2FjqA/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1yxWgl4ZC8BDubbFPKe-Acrd2f6UJVCMKuH6nlD2FjqA/edit#gid=1507449212) AS AAA
-2. SQL Database
-3. R Programming
-4. Data Transformation
-5. Data Visualization
-6. Statistics
-7. Intro to Classical Machine Learning
-8. Intro to Python
-9. Essential Python for Data Analyst
-10. Dashboard
+1. Spreadsheet
+  * Arrange Data, VLOOKUP , Pivot Table  
+2. SQL
+  * Aggregate Function
+  * Join Tables
+  * Query and Subquery
+  * Clean Data (Clean NULL)
+3. Programming
+  * R
+    * Data Transformation
+    * Data Visualization
+  * Python
+    * Pandas
+    * Numpy
+  * Web Scraping
+4. Statistics
+  * AB Testing
+  * Correlation and Linear Regression
+  * Logistic Regression
+5. Basic Machine Learning
+  * Supervised Learning
+  * Unsupervised Learning
+  * Reinforcement Learning
+  * Regression Model
+  * Classification Model
+6. Dashboard
+  * Looker Studio
+  * Tableau
+  * PowerBI
 
 Badges : 
 https://www.credly.com/users/melita-sawangchot
